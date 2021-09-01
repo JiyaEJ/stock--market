@@ -1,3 +1,28 @@
+
 <div class="card">
-  dfg
+
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label></mat-label>
+  <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto"  >
+  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+    <mat-option *ngFor="let option of filteredOptions | async" [value]="option" (click)="getCurrentDetails(option.id)">
+      {{option.name}}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
+</div>
+
+<div class="container">
+  <div class="col-sm-12">
+    <div class="card" >
+      <div *ngFor="let data of currentData ">
+      <h1>{{data.name}}</h1>
+        <div class="col-sm-3">
+          Market Captial{{data.market_cap}}
+        </div>
+        <div class="col-sm-3">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

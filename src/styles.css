@@ -2,7 +2,10 @@
 body{
   margin: 0;
 
-  background: linear-gradient(to top, #dbfdff 33%, #FFFFFF 100%);
+  background: linear-gradient(to top,#E0F2FF 20%, #fbfdfa 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

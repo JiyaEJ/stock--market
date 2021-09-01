@@ -11,9 +11,7 @@ export class DashboardComponent implements OnInit {
   constructor(private api: ApiService) { }
 
   ngOnInit(): void {
-  this.api.getAllStockData().subscribe((res:any)=>{
-    console.log(res);
-  });
+
   }
 
 

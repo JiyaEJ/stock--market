@@ -5,13 +5,18 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
-
+  private apiBaseUrl: string = "http://localhost/stockMarket/";
   constructor(private http: HttpClient) { }
 
   getAllStockData()
   {
-    return this.http.get("http://localhost/stockMarket/api/index_get");
+    return this.http.get(this.apiBaseUrl+"api/index_get");
   }
 
+  getCurrentStockData(id:any)
+  {
 
+    return this.http.post(this.apiBaseUrl +'GetCurrent',JSON.stringify(id));
+
+  }
 }
