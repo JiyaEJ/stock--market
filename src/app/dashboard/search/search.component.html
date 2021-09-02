@@ -12,17 +12,159 @@
 </mat-form-field>
 </div>
 
-<div class="container">
-  <div class="col-sm-12">
-    <div class="card" >
+<div class="container stock-data">
+  <div class="row">
+    <div class="col-sm-12 card rounded" >
       <div *ngFor="let data of currentData ">
-      <h1>{{data.name}}</h1>
-        <div class="col-sm-3">
-          Market Captial{{data.market_cap}}
+      <h1 class="company"> {{data.name}}</h1>
+      <div class="stock-details">
+        <div class="row">
+          <div class="col">
+              <div class="row">
+                <div class="col-sm-7">
+                  <span class="col-label">Market Captial </span>
+                </div>
+                <div class="col-sm-5">
+                  <span class="col-val "><span class="symbol">&#8377;</span>{{data.market_cap}}</span>
+                </div>
+             </div>
+
+          </div>
+
+
+          <div class="col ">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">Divident Yeild</span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val ">{{data.dividend_yield}}%</span>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">Debt Equality</span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val ">{{data.debt_to_equity}}%</span>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="col-sm-3">
+
+
+        <div class="row">
+
+          <div class="col even-col">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">Current Price</span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val "><span class="symbol">&#8377;</span>{{data.market_Price}}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col even-col">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">ROCE</span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val ">{{data.roce}}%</span>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col even-col  rounded">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">EPS</span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val "><span class="symbol">&#8377;</span>{{data.eps}}</span>
+              </div>
+            </div>
+
+          </div>
         </div>
+
+
+        <div class="row">
+
+          <div class="col">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">Stock Pre </span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val ">{{data.stock}}%</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">ROE </span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val ">{{data.roe_pre}}%</span>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="col">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">Reserves</span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val "><span class="symbol">&#8377;</span>{{data.reserves}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col even-col">
+            <div class="row">
+              <div class="col-sm-7">
+                <span class="col-label">Debt</span>
+              </div>
+              <div class="col-sm-5">
+                <span class="col-val "><span class="symbol">&#8377;</span>{{data.debt}}</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="col hide-col">
+
+          </div>
+          <div class="col hide-col">
+
+          </div>
+
+        </div>
+      </div>
       </div>
     </div>
   </div>
+
 </div>
+
+

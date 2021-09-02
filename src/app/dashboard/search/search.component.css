@@ -1,3 +1,51 @@
 .mat-form-field-wrapper{
   padding-bottom: 0 !important;
 }
+
+.col{
+margin: 1%;
+
+padding: 2%;
+}
+
+
+.even-col{
+background: #e7ffe7c7;
+border-radius: 10px;
+}
+
+.stock-data{
+  margin: 1% 0;
+}
+
+.stock-details{
+  padding: 2%;
+  background: #a1a1a10a;
+  margin: 1%;
+}
+
+.company{
+  padding-top:2% ;
+}
+.hide-col{
+  background: none;
+}
+
+
+.col-val{
+  color: brown;
+  font-weight: bold;
+}
+
+.symbol
+{
+  padding-right: 2px;
+}
+
+
+.card{
+  border-radius: 8px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 5%);
+
+
+}

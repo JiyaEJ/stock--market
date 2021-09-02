@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiBaseUrl: string = "http://localhost/stockMarket/";
+  private apiBaseUrl: string = "https://stock-market-api-php.herokuapp.com/";
   constructor(private http: HttpClient) { }
 
   getAllStockData()
