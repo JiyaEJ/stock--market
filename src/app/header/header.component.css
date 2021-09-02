@@ -1,5 +1,10 @@
 .header-banner{
-  padding: 2% 0 2% 2%;
+  padding: 2% 0 1% 2%;
   background: #e8fdff;
 
+}
+
+.banner-name{
+  padding-left: 3%;
+  font-weight: bold;
 }

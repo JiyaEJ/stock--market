@@ -13,7 +13,7 @@ export class SearchComponent implements OnInit {
   options: any[] = [ ];
   filteredOptions!: Observable<any[]>;
   currentData:any;
-
+  hide:boolean=false;
   public searchForm: FormGroup;
   constructor(private api: ApiService,private fb:FormBuilder) {
     this.searchForm = this.fb.group({
@@ -55,7 +55,7 @@ export class SearchComponent implements OnInit {
       userid:id
     }
     this.api.getCurrentStockData(payload).subscribe((res: any) => {
-      console.log(res);
+      this.hide=true;
       this.currentData=res.data;
     },error => {
       console.error(error);
