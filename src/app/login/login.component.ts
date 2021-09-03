@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
 
       }
       this.authentication.verifyUser(postData).subscribe((res: any) => {
-        console.log(res);
+
 
         // alert("success");
         this.authentication.setLocalStorage(res.data);

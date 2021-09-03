@@ -6,8 +6,8 @@ import { AuthenticationService } from './authentication.service';
   providedIn: 'root'
 })
 export class ApiService {
-  // private apiBaseUrl: string = "https://stock-market-api-php.herokuapp.com/";
-  private apiBaseUrl: string = "http://localhost/stockMarket/";
+  private apiBaseUrl: string = "https://stock-market-api-php.herokuapp.com/";
+  // private apiBaseUrl: string = "http://localhost/stockMarket/";
   token:string|any;
   httpOptions: any = {
     "token": this.getSessionToken()

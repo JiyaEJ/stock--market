@@ -7,13 +7,13 @@ import { Injectable } from '@angular/core';
 export class AuthenticationService {
   userData: any;
   userId!: string;
-  // private apiBaseUrl: string = "https://stock-market-api-php.herokuapp.com/";
-  private apiBaseUrl: string = "http://localhost/stockMarket/";
+  private apiBaseUrl: string = "https://stock-market-api-php.herokuapp.com/";
+  // private apiBaseUrl: string = "http://localhost/stockMarket/";
   constructor(private http: HttpClient) { }
 
 
   verifyUser(userData: any) {
-    return this.http.post(this.apiBaseUrl + 'Verifyuser', JSON.stringify(userData));
+    return this.http.post(this.apiBaseUrl + 'VerifyUser', JSON.stringify(userData));
   }
 
   setLocalStorage(data: any) {
