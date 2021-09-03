@@ -19,10 +19,8 @@ export class SearchComponent implements OnInit {
     this.searchForm = this.fb.group({
       "keyword": new FormControl('', Validators.required)
     });
-    this.api.getAllStockData().subscribe((res: any) => {
-      this.options = res;
 
-    });
+
   }
 
 

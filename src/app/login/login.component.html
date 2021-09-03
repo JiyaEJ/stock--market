@@ -1,5 +1,6 @@
-<section class="vh-100" style="background-color: #508bfc;">
-  <div class="container py-5 h-100">
+<app-header></app-header>
+<section class="vh-100" >
+  <div class="container py-3 h-75">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
         <div class="card shadow-2-strong" style="border-radius: 1rem;">
@@ -9,7 +10,7 @@
               <div class="card-body ">
                 <div class="row m-4">
                   <div class=" col-sm-12">
-                    <label for="username">Username</label>
+                    <label for="username">Username<span class="text-danger">*</span></label>
                     <input type="text" class="form-control" name="username" formControlName="username" name="username"
                       id="username">
                     <span class="text-danger" *ngIf="f.username.touched && f.username.errors">Username is required</span>
@@ -17,7 +18,7 @@
                 </div>
                 <div class="row m-4">
                   <div class=" col-sm-12">
-                    <label for="password">Password</label>
+                    <label for="password">Password<span class="text-danger">*</span></label>
                     <input type="password" class="form-control" id="password" formControlName="password"
                       name="password">
                     <span class="text-danger" *ngIf="f.password.touched && f.username.errors">Password is required</span>
@@ -27,7 +28,7 @@
                   <div class="col-sm-12 ">
 
                     <div class="row form-group">
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn submit-btn">Submit</button>
                     </div>
                   </div>
                 </div>
