@@ -62,3 +62,14 @@ border-radius: 10px;
 .material-icons{
   padding-right: 2px;
 }
+
+
+.search-input {
+  background-color: white !important;
+
+  border-radius: 2em;
+  box-shadow: 2px ​2px 6px -2px !important;
+}
+::ng-deep .mat-form-field-underline {
+    display: none;
+}

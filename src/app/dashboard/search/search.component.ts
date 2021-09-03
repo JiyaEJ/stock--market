@@ -19,6 +19,10 @@ export class SearchComponent implements OnInit {
     this.searchForm = this.fb.group({
       "keyword": new FormControl('', Validators.required)
     });
+    this.api.getAllStockData().subscribe((res: any) => {
+      this.options = res;
+
+    });
   }
 
 
@@ -62,6 +66,29 @@ export class SearchComponent implements OnInit {
     });
   }
 
+  getsearchData(event:any){
+    var userid =this.searcData(event.target.value);
+
+    if (userid != 0)
+    {
+
+      this.getCurrentDetails(userid);
+    }
+
+  }
+
+  searcData(val:string){
+
+
+    if (this.options.find(x => x.name == val) != undefined)
+    {
+      var userid = this.options.find(x => x.name == val).id;
+      return userid;
+    }
+    else{
+      return 0;
+    }
+  }
 
 
 

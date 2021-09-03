@@ -9,3 +9,9 @@ body{
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.search-input {
+  background-color: white !important;
+  padding: 1%;
+  border-radius: 2em;
+  box-shadow: 2px ​2px 6px -2px !important;
+}
